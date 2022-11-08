@@ -28,7 +28,7 @@ const Header = () => {
     setOptions((prev) => {
       return {
         ...prev,
-        [name]: operation == "i" ? options[name] + 1 : options[name] -1,
+        [name]: operation === "i" ? options[name] + 1 : options[name] -1,
       };
     });
   };
